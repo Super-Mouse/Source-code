@@ -4,14 +4,19 @@ var Event = {
     this.handlers || this.handlers = {};
     var currentEvent = this.handlers[eventName];
     if (!currentEvent) {
-      currentEvent.push(callback);
+      currentEvent = [];
     }
+    currentEvent.push(callback);
   },
   off (eventName, callback){
     this.handlers || this.handlers = {};
     var currentEvent = this.handlers[eventName];
     if (currentEvent) {
-      currentEvent = null;
+      for (var i = 0; i < current.length; i++) {
+        if (currentEvent[i] == callback) {
+          currentEvent.splice(i, 1);
+        }
+      }
     }
   },
   fire (eventName, data){
