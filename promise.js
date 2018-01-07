@@ -15,10 +15,10 @@ Promise.prototype = {
         this.callbacks.shift()["reject"](result);
       }
     },
-    then: function(successHandler, failedHandler) {
+    then: function(successCallback, failedCallback) {
         this.callbacks.push({
-            resolve: successHandler,
-            reject: failedHandler
+            resolve: successCallback,
+            reject: failedCallback
         });
         return this;
     }
