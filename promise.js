@@ -3,8 +3,6 @@
 var Promise = function() {
     this.callbacks = [];
 }
-
-
 Promise.prototype = {
     construct: Promise,
     resolve: function(result) {
