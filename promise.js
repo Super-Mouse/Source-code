@@ -1,4 +1,5 @@
 //constructor
+//
 var Promise = function() {
     this.callbacks = [];
 }
