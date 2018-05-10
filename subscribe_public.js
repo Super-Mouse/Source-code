@@ -14,7 +14,7 @@ var Event = {
         currentEvent.length = 0;
       } else{
         for (var i = 0; i < current.length; i++) {
-          if (currentEvent[i] == callback) {
+          if (currentEvent[i] == callback) { //疑问：两个函数能否比较？
             currentEvent.splice(i, 1);
           }
         }
@@ -26,7 +26,7 @@ var Event = {
         param = Array.prototype.slice(arguments, 1);
     if (currentEvent) {
       for (var i = 0; i < currentEvent.length; i++) {
-        currentEvent(param);
+        currentEvent[i](param);
       }
     }
 
