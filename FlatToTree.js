@@ -1,7 +1,7 @@
 function toTree(arr) {
   let temp = {}
   let obj = {}
-  for (const item of object) {
+  for (const item of arr) {
     temp[item.id] = item
   }
   for (const key in temp) {
