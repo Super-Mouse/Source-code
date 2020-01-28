@@ -13,9 +13,7 @@
 // 输出: false
 // 示例 5:
 // 输入: "{[]}"
-// 输出: true
-
-var isValid = function(s) {
+function isValid(s) {
   if (s%2 === 1) {
     return false
   }
