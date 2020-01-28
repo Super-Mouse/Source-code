@@ -12,7 +12,6 @@
 // 输入: "([)]"
 // 输出: false
 // 示例 5:
-// 输入: "{[]}"
 function isValid(s) {
   if (s%2 === 1) {
     return false
