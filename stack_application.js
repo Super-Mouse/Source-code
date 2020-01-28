@@ -11,7 +11,6 @@
 // 示例 4:
 // 输入: "([)]"
 // 输出: false
-// 示例 5:
 
 var isValid = function(s) {
   if (s%2 === 1) {
