@@ -15,4 +15,4 @@ let $2search = function (arr, val) {
   } else{
     return true
   }
-}
+} 
